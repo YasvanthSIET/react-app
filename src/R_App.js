@@ -19,9 +19,6 @@ const AppR = () => {
       <HeaderR title='Social media' />
       <NavR />
       <div id='content'>
-      {/* {{isLoading} && <p className='loading'>
-        Loading...</p>}
-      {(!{isLoading}) &&  */}
       <Routes>
         <Route path='/' element={<HomeR />} />
         <Route path='/post'>

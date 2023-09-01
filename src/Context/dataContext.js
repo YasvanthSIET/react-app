@@ -17,7 +17,6 @@ const DataProvider = ({children}) => {
   const[postBody,setPostBody] = useState('')
   const[editTitle,setEditTitle] = useState('')
   const[editBody,setEditBody] = useState('')
-  const[userId,setUserId] = useState('')
   const navigate = useNavigate();
   const {width} = useWindowSize()
 
@@ -73,9 +72,7 @@ const DataProvider = ({children}) => {
       }
     }
   }
-  const handleEdit = async (e) =>{
-    e.preventDefault();
-    const id = Number(userId);
+  const handleEdit = async (id) =>{
     const dateTime = format(new Date(),'MMM dd, yyyy pp')
     const editPost = {id,title:editTitle,dateTime,body:editBody}
     try{
@@ -117,7 +114,7 @@ const DataProvider = ({children}) => {
         <DataContext.Provider value={{
             width,search,setSearch,searchResult,isLoading,setIsLoading,
             handleSubmit,postTitle,setPostTitle,postBody,setPostBody,
-            posts,setUserId,editTitle,editBody,setEditTitle,setEditBody,handleEdit,
+            posts,editTitle,editBody,setEditTitle,setEditBody,handleEdit,
             handleDelete
         }}>
             {children}
