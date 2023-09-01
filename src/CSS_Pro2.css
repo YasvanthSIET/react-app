@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    border-bottom: 1px solid black;
+    background-color: black;
+    list-style-type: none;
+    height: 25px;
+    font-weight: 500;
+    color: white;
+}
+#header li{
+    display: block;
+    width: 33.33333vw;
+    text-align: center;
+}
+#header li:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+#result{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    list-style-type: square;
+}
+
+#result li{
+    margin-bottom: 15px;
+}

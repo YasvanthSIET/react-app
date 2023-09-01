@@ -1,0 +1,97 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+.page{
+  background-color: skyblue;
+  text-align: center;
+  min-height: 100vh;
+}
+header{
+  background-color: blue;
+}
+header h1{
+  color: white;
+}
+main{
+  min-height: 76.5vh;
+  background-color: rgb(222, 135, 200);
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: xx-large;
+  color: blue;
+  font-weight: 700;
+}
+ul{
+  display: flex;
+  flex-flow: column wrap;
+  row-gap: 10px;
+}
+.item{
+  position: relative;
+  background-color: aliceblue;
+  list-style-type: none;
+  min-width: 70vw;
+  min-height: 60px;
+  border-radius: 7px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.item input[type="checkbox"]{
+  transform: scale(200%,200%);
+  position: absolute;
+  left: 20px;
+}
+.item label{
+  position: absolute;
+  left: 60px;
+  margin-top: -10px;
+}
+.item svg{
+  position: absolute;
+  right: 20px;
+  outline: none;
+}
+.item svg:is(:hover,:active){
+  color: red;
+}
+footer{
+  background-color: black;
+  color: aquamarine;
+  height: 40px;
+  display: grid;
+  place-content: center;
+
+}
+
+.addItem,.searchItem{
+  background-color: rgb(222, 135, 200);
+}
+.addItem input {
+  margin: 10px 0px;
+  width: 60vw;
+  height: 30px;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding-left: 5px;
+}
+.addItem button{
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  background-color: burlywood;
+}
+
+.searchItem input {
+  margin-left: -40px;
+  margin-bottom: 10px;
+  width: 60vw;
+  height: 30px;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding-left: 5px;
+}
